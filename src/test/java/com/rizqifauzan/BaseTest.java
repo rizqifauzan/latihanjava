@@ -22,12 +22,11 @@ public class BaseTest {
         // open web tujuan : midtrans
         driver.get("https://demo.midtrans.com/#");
         driver.manage().window().maximize();
-        //w = new WebDriverWait(driver, Duration.ofSeconds(3));
     }
 
     @After
     public void closeWebBrowser(){
-        //driver.quit();
+	driver.quit();
     }
 
 }
